@@ -1,0 +1,22 @@
+.bannerimage{
+    z-index: 999;
+    background-color: gray;
+    height: 0;
+    width: 0;
+    border-top: 620px solid #f3f4f6;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    background: transparent; 
+}
+.signup, .free-trial-button, .started-free-button, .plan-choose-button, .question-answer-button, .get-started-button{
+    background-color: #0694A2;
+}
+.signup:hover,.free-trial-button:hover, .started-free-button:hover, .plan-choose-button:hover, .question-answer-button:hover, .get-started-button:hover{
+    background-color: #047481;
+}
+ .contact-button{
+    background-color:#d5f5f6;
+ }
+ .footer-text{
+     color:#6b7280;
+ }
