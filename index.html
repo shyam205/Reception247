@@ -11,20 +11,52 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+
+       <!-- popup -->
+       <div class="fixed z-10 box-border w-full h-full popup px-2 py-2 bg-gray-500" id="popupdiv">
+        <div class="box-border w-full bg-white p-8 rounded-md">
+            <div class="flex justify-between box-border Reception-tag pt-4 pb-4">
+              <div class="w-40"><img class="w-40 sm:w-full h-full" src="images/reception247-logo-on-light.svg" alt="logo"></div>
+              <div class="inline-block w-4 h-8 overflow-hidden"><img src="images/times-solid.svg" style="w-full h-full" onclick="cancelpop()"></div>
+            </div>
+            <div class="icons">
+                <div class="flex items-center py-4">
+                    <div class="icon w-6 h-6 overflow-hidden"><img src="images/shopping-cart-solid.svg" style="h-full w-full"></div>
+                    <div class="text ml-4">Pricing</div>
+                </div>
+                <div class="flex items-center py-4">
+                    <div class="icon w-6 h-6 overflow-hidden"><img src="images/question-circle-regular.svg" style="h-full w-full"></div>
+                    <div class="text ml-4">FAQ</div>
+                </div>
+                <div class="flex items-center py-4">
+                    <div class="icon w-6 h-6 overflow-hidden"><img src="images/envelope-regular.svg" style="h-full w-full"></div>
+                    <div class="text ml-4">Contact</div>
+                </div>
+            </div>
+            <a href="#" class="popup-signup inline-block w-full text-center mt-8 px-4 py-4 text-white rounded-md hover:bg-teal-700 font-medium">Sign up</a>
+          <div class="text-center">
+           <span class="inline-block mt-8">Existing customer? <a href="#" class="popup-signin inline-block underline font-bold">Sign in</a></span>
+           </div>  
+          </div>  
+      </div>
+
+         <!-- header -->
         <div class="mx-auto px-4 sm:px-6 shadow box-border">
         <div class="flex flex-col sm:flex-row justify-evenly items-center py-6">
-            <div class="overflow-hidden w-56">
-                <img class="w-full h-full" src="images/reception247-logo-on-light.svg" alt="logo">
+            <div class="flex justify-between overflow-hidden w-full sm:w-56">
+                <img class="w-40 sm:w-full h-full" src="images/reception247-logo-on-light.svg" alt="logo">
+                <div class="inline-block w-8 overflow-hidden">
+                <img src="images/bars-solid.svg" style="w-full h-full" id="popupimage" onclick="popupfunc()">
+                </div>
             </div>
-            <div class="">
+            <div class="hidden sm:block">
                <ul class="flex flex-col sm:flex-row justify-evenly items-center">
                   <li href="#" class="text-gray-600 hover:text-gray-900 mt-3 sm:mt-0 font-medium">Pricing</li>
                   <li href="#" class="text-gray-600 hover:text-gray-900 mt-3 sm:mt-0 ml-0 sm:ml-8 font-medium">FAQ</li>
                   <li href="#" class="text-gray-600 hover:text-gray-900 mt-3 sm:mt-0 ml-0 sm:ml-8 font-medium">Contact</li>
                </ul>
             </div>
-            <div class="text-center">
+            <div class="text-center hidden sm:block">
               <a href="#" class="block sm:inline-block text-gray-500 hover:text-gray-900 mt-3 sm:mt-0 font-medium">Sign in</a>
               <a href="#" class="block sm:inline-block signup mt-3 sm:mt-0 ml-4 px-4 py-2 text-white rounded-md hover:bg-teal-700 font-medium">Sign up</a>
             </div>
@@ -35,7 +67,7 @@
         <div class="flex flex-col lg:flex-row w-full bg-gray-100">
             <div class="lg:w-6/12 w-full pl-4 md:pl-12 lg:pl-32 pt-20 pb-8 lg:pb-20 pr-3 lg:pr-10">
                 <p class="text-gray-700 text-base sm:text-lg">LIVE RECEPTIONISTS ANSWERING YOUR CALLS</p>
-                <p class="text-5xl sm:text-6xl font-black leading-none mt-8">Make a great <span class="block">impression,<span> <span class="block text-pink-600">every time!</span></p>
+                <p class="text-5xl sm:text-6xl font-black leading-none mt-8 text-center sm:text-left">Make a great <span class="block">impression,<span> <span class="block text-pink-600">every time!</span></p>
                 <p class="text-gray-700 text-lg mt-10">Businesses are built on quality customer service. Get a dedicated team of live virtual receptionists to transfer calls, answer questions, book appointments, and more!</p>
                 <div class="w-full lg:text-center">
                 <a href="#" class="free-trial-button py-2 sm:py-3 px-5 sm:px-10 text-lg inline-block mt-8 text-white rounded-md text-lg sm:text-xl">Start your 14-day free trial</a>
@@ -50,7 +82,7 @@
         <!-- customer experience tag -->
           <div class="mx-auto pt-20 pb-40 px-4 sm:px-6 lg:px-8 bg-gray-100">
           <div class="mx-auto max-w-4xl text-center">
-            <p class="text-3xl sm:text-4xl font-extrabold">Give your customers the experience they deserve</p>
+            <p class="text-2xl sm:text-4xl font-extrabold">Give your customers the experience they deserve</p>
             <span class="font-normal text-lg sm:text-xl text-gray-700 mt-4 inline-block">Your reputation is safe in the hands of Reception 24/7’s phone answering service. Our team of trained receptionists learn all the ins and outs of your business, so they’re always ready to handle your calls professionally and give your customers a quality experience every time they call.</span>
           </div>
           </div>
@@ -178,7 +210,7 @@
           <div class="md:w-1/2 w-full pt-20 pb-10 pl-5 pr-5 sm:pl-12 sm:pr-5 text-white">
             <p class="">READY TO LEARN MORE?</p>
             <h1 class="font-extrabold text-4xl pt-5">Request a free consultation</h1>
-            <span class="text-lg pt-5">We’re here and ready to assist your callers! Fill out your contact details and we’ll be in touch to show how we can help take your customer service to the next level.</span>
+            <span class="inline-block text-lg mt-4">We’re here and ready to assist your callers! Fill out your contact details and we’ll be in touch to show how we can help take your customer service to the next level.</span>
             <form class="max-w-sm">
             <label class="text-sm block mt-8">Your name</label>
              <input type="text" class="py-2 w-full block rounded-md">
@@ -197,7 +229,7 @@
     <!-- footer -->
     <div class="w-full">
         <div  class="mx-auto text-center pt-16 pb-16">
-          <p class="font-extrabold text-3xl sm:text-4xl">Ready to dive in? <span class="block">Start your free trial today.</span></p>
+          <p class="font-extrabold text-2xl sm:text-4xl">Ready to dive in? <span class="block">Start your free trial today.</span></p>
           <div class="mt-8">
              <a href="#" class="get-started-button px-4 py-4 text-white rounded-md font-medium">Get started</a>
               <a href="#" class="contact-button px-4 py-4 text-teal-700 inline-block ml-4 rounded-md font-medium hover:bg-gray-100">Contact us</a>
@@ -212,6 +244,20 @@
         </div>
     </div>
 
-    <script src="" async defer></script>
+    <script>
+       var popupimage = document.getElementById("popupimage");
+         var popupdiv = document.getElementById("popupdiv");
+         
+      function popupfunc() {
+          popupdiv.classList.add("mypopup");  
+          popupdiv.classList.remove("cancelpopupshow");
+      }
+      function cancelpop() {
+        popupdiv.classList.add("cancelpopupshow");
+        popupdiv.classList.remove("mypopup");
+      } 
+         
+       
+    </script>
     </body>
 </html>

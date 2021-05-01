@@ -20,3 +20,18 @@
  .footer-text{
      color:#6b7280;
  }
+ .popup-signup{
+    background-color: #0694A2;
+ }
+ .popup-signin{
+     color: #0694A2;
+ }
+ .popup{
+     display: none;
+ }
+ .mypopup{
+     display: block;
+ }
+ .cancelpopupshow{
+     display: none;
+ }
